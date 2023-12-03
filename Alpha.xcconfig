@@ -1,0 +1,15 @@
+//
+//  Alpha.xcconfig
+//  hamuwemu
+//
+//  Created by Dulitha Dabare on 2022-03-24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+PRODUCT_BUNDLE_IDENTIFIER = $(inherited).alpha
+
+ASSETCATALOG_COMPILER_APPICON_NAME = $(inherited).alpha
+
+PRODUCT_NAME = $(inherited) (⍺)

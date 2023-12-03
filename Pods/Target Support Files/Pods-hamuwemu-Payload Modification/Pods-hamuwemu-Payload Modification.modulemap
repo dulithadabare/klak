@@ -1,0 +1,6 @@
+framework module Pods_hamuwemu_Payload_Modification {
+  umbrella header "Pods-hamuwemu-Payload Modification-umbrella.h"
+
+  export *
+  module * { export * }
+}

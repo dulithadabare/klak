@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>43796721080-0f61hsd881nsj7j7oird8pnfpj1qho46.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.43796721080-0f61hsd881nsj7j7oird8pnfpj1qho46</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDspo4fVf9jZwuofvqR5QCKRsnLewYlV4E</string>
+	<key>GCM_SENDER_ID</key>
+	<string>43796721080</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.dabare.hamuwemu.Payload-Modification</string>
+	<key>PROJECT_ID</key>
+	<string>hamuwemu-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hamuwemu-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:43796721080:ios:525521af9e9aa30103734d</string>
+	<key>DATABASE_URL</key>
+	<string>https://hamuwemu-app-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</dict>
+</plist>

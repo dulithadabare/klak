@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21A344" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="HwChatGroup" representedClassName="HwChatGroup" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="defaultChannelId" optional="YES" attributeType="String"/>
+        <attribute name="defaultChannelName" optional="YES" attributeType="String"/>
+        <attribute name="groupId" optional="YES" attributeType="String"/>
+        <attribute name="groupName" optional="YES" attributeType="String"/>
+        <attribute name="isChat" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isTemp" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="lastMessageText" optional="YES" attributeType="Transformable" valueTransformerName="TextAttributeTransformer" customClassName="NSAttributedString"/>
+        <relationship name="chatListItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HwChatListItem" inverseName="group" inverseEntity="HwChatListItem"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="groupId"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="HwChatListItem" representedClassName="HwChatListItem" syncable="YES">
+        <attribute name="channelId" optional="YES" attributeType="String"/>
+        <attribute name="channelName" optional="YES" attributeType="String"/>
+        <attribute name="groupId" optional="YES" attributeType="String"/>
+        <attribute name="groupName" optional="YES" attributeType="String"/>
+        <attribute name="isChat" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isTemp" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="lastMessageAttrText" optional="YES" attributeType="Transformable" valueTransformerName="TextAttributeTransformer" customClassName="NSAttributedString"/>
+        <attribute name="lastMessageAuthorUid" optional="YES" attributeType="String"/>
+        <attribute name="lastMessageDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="lastMessageId" optional="YES" attributeType="String"/>
+        <attribute name="lastMessageSender" optional="YES" attributeType="String"/>
+        <attribute name="lastMessageStatus" optional="YES" attributeType="String"/>
+        <attribute name="lastMessageText" optional="YES" attributeType="String" valueTransformerName="TextAttributeTransformer" customClassName="NSAttributedString"/>
+        <attribute name="threadId" optional="YES" attributeType="String"/>
+        <attribute name="threadName" optional="YES" attributeType="String"/>
+        <attribute name="unreadCount" optional="YES" attributeType="Integer 16" minValueString="0" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="userPhoto" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HwChatGroup" inverseName="chatListItem" inverseEntity="HwChatGroup"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="groupId"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="HwChatMessage" representedClassName="HwChatMessage" syncable="YES">
+        <attribute name="author" optional="YES" attributeType="String"/>
+        <attribute name="channelName" optional="YES" attributeType="String"/>
+        <attribute name="channelUid" optional="YES" attributeType="String"/>
+        <attribute name="groupName" optional="YES" attributeType="String"/>
+        <attribute name="groupUid" optional="YES" attributeType="String"/>
+        <attribute name="isChat" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isReadByMe" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="isSystemMessage" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isThreadMessage" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="messageId" optional="YES" attributeType="String"/>
+        <attribute name="replyCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sender" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+        <attribute name="text" optional="YES" attributeType="Transformable" valueTransformerName="TextAttributeTransformer" customClassName="NSAttributedString"/>
+        <attribute name="threadName" optional="YES" attributeType="String"/>
+        <attribute name="threadUid" optional="YES" attributeType="String"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="replies" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="HwChatMessage" inverseName="replyingTo" inverseEntity="HwChatMessage"/>
+        <relationship name="replyingTo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HwChatMessage" inverseName="replies" inverseEntity="HwChatMessage"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="messageId"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="HwGroupMember" representedClassName="HwGroupMember" syncable="YES">
+        <attribute name="groupId" optional="YES" attributeType="String"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String"/>
+        <attribute name="uid" optional="YES" attributeType="String"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="groupId"/>
+                <constraint value="phoneNumber"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="HwChatGroup" positionX="-54" positionY="18" width="128" height="164"/>
+        <element name="HwChatListItem" positionX="233.96484375" positionY="-61.2421875" width="128" height="299"/>
+        <element name="HwChatMessage" positionX="-54" positionY="90" width="128" height="314"/>
+        <element name="HwGroupMember" positionX="90" positionY="72" width="128" height="74"/>
+    </elements>
+</model>

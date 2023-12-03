@@ -1,0 +1,36 @@
+{
+    "default": {
+        "background": "./green.png",
+        "padding": 50,
+        "stack_title" : true,
+        "title_min_height": "25%"
+    },
+    "data": [
+        {
+            "filter": "ChatView",
+            "background": "./green.png",
+            "font_size": 10,
+            "title": {
+                "font_size": 70.0,
+                "text": "Simple. Fast. Secure."
+            }
+        },
+        {
+            "filter": "Encrypted",
+            "background": "./red.png",
+            "title": {
+                "font_size": 70.0,
+                "text": "End-to-end encrypted\n messaging"
+            }
+        },
+        {
+            "filter": "Topics",
+            "background": "./green.png",
+            "title": {
+                "font_size": 70.0,
+                "text": "Organize your conversations"
+            }
+        }
+        
+    ]
+}

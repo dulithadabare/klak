@@ -1,0 +1,142 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Amplify",
+        "repositoryURL": "https://github.com/aws-amplify/amplify-ios",
+        "state": {
+          "branch": null,
+          "revision": "5c6d69d2445337fe8ab41de09e2b9a6e1d7fe742",
+          "version": "1.24.0"
+        }
+      },
+      {
+        "package": "AppSyncRealTimeClient",
+        "repositoryURL": "https://github.com/aws-amplify/aws-appsync-realtime-client-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "810a305a8e2200db90d3a237c687b20cfc610268",
+          "version": "1.9.1"
+        }
+      },
+      {
+        "package": "AWSiOSSDKV2",
+        "repositoryURL": "https://github.com/aws-amplify/aws-sdk-ios-spm.git",
+        "state": {
+          "branch": null,
+          "revision": "9e2e3589225c17dabda336dbf25d854220369e1e",
+          "version": "2.27.8"
+        }
+      },
+      {
+        "package": "BottomSheet",
+        "repositoryURL": "https://github.com/lucaszischka/BottomSheet",
+        "state": {
+          "branch": null,
+          "revision": "fd87c1d84d61d4c6fae179fef22d30407737f1e1",
+          "version": "2.7.0"
+        }
+      },
+      {
+        "package": "CountryPicker",
+        "repositoryURL": "https://github.com/mobven/CountryPicker.git",
+        "state": {
+          "branch": null,
+          "revision": "8711127ce54cabf52481b735d1322ba39f4e856b",
+          "version": "1.0.3"
+        }
+      },
+      {
+        "package": "PMKFoundation",
+        "repositoryURL": "https://github.com/PromiseKit/Foundation",
+        "state": {
+          "branch": null,
+          "revision": "985f17fa69ee0e5b7eb3ff9be87ffc4e05fc0927",
+          "version": "3.4.0"
+        }
+      },
+      {
+        "package": "iPhoneNumberField",
+        "repositoryURL": "https://github.com/MojtabaHs/iPhoneNumberField.git",
+        "state": {
+          "branch": null,
+          "revision": "a6b5fcc6c9b085285932fe4fe754086ab92409cb",
+          "version": "0.6.1"
+        }
+      },
+      {
+        "package": "Kingfisher",
+        "repositoryURL": "https://github.com/onevcat/Kingfisher",
+        "state": {
+          "branch": "master",
+          "revision": "59eb199fdb8dd47733624e8b0277822d0232579e",
+          "version": null
+        }
+      },
+      {
+        "package": "PhoneNumberKit",
+        "repositoryURL": "https://github.com/marmelroy/PhoneNumberKit",
+        "state": {
+          "branch": null,
+          "revision": "fc8b12831c166e7851c341c2ac5a120c8716304a",
+          "version": "3.3.4"
+        }
+      },
+      {
+        "package": "PromiseKit",
+        "repositoryURL": "https://github.com/mxcl/PromiseKit",
+        "state": {
+          "branch": null,
+          "revision": "7b07b214dacecb22ca4b680531c7e981d52483f9",
+          "version": "6.16.3"
+        }
+      },
+      {
+        "package": "Resolver",
+        "repositoryURL": "https://github.com/hmlongco/Resolver.git",
+        "state": {
+          "branch": null,
+          "revision": "609908e0b67911ebf7386609552a48d4ec07958e",
+          "version": "1.4.4"
+        }
+      },
+      {
+        "package": "Sentry",
+        "repositoryURL": "https://github.com/getsentry/sentry-cocoa.git",
+        "state": {
+          "branch": null,
+          "revision": "967f04b3cd6989df3f9ced3060481a21646c146d",
+          "version": "7.9.0"
+        }
+      },
+      {
+        "package": "SQLite.swift",
+        "repositoryURL": "https://github.com/stephencelis/SQLite.swift.git",
+        "state": {
+          "branch": null,
+          "revision": "5f5ad81ac0d0a0f3e56e39e646e8423c617df523",
+          "version": "0.13.2"
+        }
+      },
+      {
+        "package": "Starscream",
+        "repositoryURL": "https://github.com/daltoniam/Starscream.git",
+        "state": {
+          "branch": null,
+          "revision": "df8d82047f6654d8e4b655d1b1525c64e1059d21",
+          "version": "4.0.4"
+        }
+      },
+      {
+        "package": "Introspect",
+        "repositoryURL": "https://github.com/siteline/SwiftUI-Introspect.git",
+        "state": {
+          "branch": null,
+          "revision": "f2616860a41f9d9932da412a8978fec79c06fe24",
+          "version": "0.1.4"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
